@@ -1,0 +1,6 @@
+services:
+  python_dsn:
+    build: .
+    stdin_open: true
+    volumes:
+      - ./:/usr/src/app
