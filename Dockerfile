@@ -1,5 +1,6 @@
-FROM pandoc/extra:latest-ubuntu
+FROM pandoc/extra:latest
 
-RUN apt update -y && apt install -y python3 python3-pip
-RUN tlmgr install pdfcol
-RUN tlmgr update -all
+RUN apk update && apk upgrade
+# RUN update-tlmgr-latest --update
+# RUN tlmgr install pdfcol
+# RUN tlmgr update -all
